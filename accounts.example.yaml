@@ -1,0 +1,4 @@
+# Copy this file to accounts.yaml on the server and replace the example values.
+accounts:
+  - username: user1
+    password: replace-this-password

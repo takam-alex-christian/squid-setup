@@ -11,7 +11,9 @@ This directory contains a Docker Compose deployment for an authenticated Squid p
    ./setup.sh
    ```
 
-The script starts the `squid` container, installs `apache2-utils`, creates the NCSA password database with `htpasswd`, and reloads Squid. The generated `passwords` file is intentionally ignored by Git.
+The script starts the `squid` container, installs `apache2-utils`, creates the NCSA password database with `htpasswd`, and reloads Squid. The generated `passwords` file and `accounts.yaml` are intentionally ignored by Git.
+
+For a GitHub deployment, copy `accounts.example.yaml` to `accounts.yaml` on the server and replace the example credentials. Do not commit `accounts.yaml` or `passwords`.
 
 The proxy listens on port `3128` and requires credentials for every request. For requests sent through Squid, the destination sees the VPS's public IP as the source address. Squid also removes common forwarding headers that could disclose the original client IP.
 

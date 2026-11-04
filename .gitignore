@@ -1,1 +1,3 @@
+# Keep proxy credentials on the server, not in GitHub.
+/accounts.yaml
 /passwords

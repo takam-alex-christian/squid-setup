@@ -1,4 +1,0 @@
-# Add one entry for each proxy account. Run ./setup.sh after changing this file.
-accounts:
-  - username: user1
-    password: secret123
